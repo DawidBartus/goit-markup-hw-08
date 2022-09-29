@@ -1,0 +1,16 @@
+.we_do {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  &__description {
+    position: absolute;
+    bottom: 0;
+    background-color: #2f303acc;
+    color: #ffffff;
+    width: 370px;
+    text-align: center;
+    font-weight: 700;
+    padding: 27px 0;
+    line-height: 1.14;
+  }
+}

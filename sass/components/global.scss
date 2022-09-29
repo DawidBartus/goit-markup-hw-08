@@ -1,0 +1,61 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button,
+fieldset,
+textarea,
+input {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: $company-dark-grey;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+img {
+  display: block;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+.second__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+.section-no_space {
+  padding-bottom: 0px;
+}
+.logo-company_color {
+  color: $company-blue;
+}

@@ -1,0 +1,30 @@
+.connection {
+  display: flex;
+  &__list {
+    display: flex;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $light-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $light-grey;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $company-blue;
+      fill: $company-blue;
+    }
+    &-phone {
+      margin-left: 30px;
+    }
+  }
+  &__svg {
+    margin-right: 10px;
+  }
+}

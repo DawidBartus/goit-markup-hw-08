@@ -1,0 +1,34 @@
+@import "utils/variables.scss";
+@import "components/global.scss";
+
+// main section
+@import "components/main.scss";
+
+// header
+@import "components/navigation.scss";
+@import "components/connection.scss";
+
+// footer
+@import "components/footer.scss";
+@import "components/newsletter.scss";
+
+// contact form
+@import "components/backdrop.scss";
+
+// lorem section
+@import "components/description.scss";
+
+// what we do
+@import "components/wedo.scss";
+
+// team section
+@import "components/team.scss";
+
+// clients section
+@import "components/clients.scss";
+
+// portfolio
+@import "components/portfolio.scss";
+
+// socialmedia icon
+@import "components/socialmediaicon.scss";
