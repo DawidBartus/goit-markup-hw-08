@@ -17,7 +17,7 @@
   line-height: 1.14;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .we__do-hidden {
     display: none;
   }

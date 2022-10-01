@@ -71,24 +71,23 @@ footer .container {
   align-items: baseline;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer {
     &__test {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
-      margin-right: 144px;
     }
     &__media {
       display: flex;
-      margin-left: 0;
+      margin: 0;
       flex-direction: column;
       align-items: center;
     }
     & .container {
       display: flex;
-      width: 768px;
+      max-width: 768px;
       justify-content: center;
     }
   }
@@ -101,6 +100,9 @@ footer .container {
       flex-wrap: wrap;
       justify-content: flex-start;
       max-width: 1200px;
+    }
+    &__test {
+      margin-right: 70px;
     }
   }
 }

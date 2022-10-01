@@ -6,24 +6,24 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 400px;
     min-width: 320px;
     max-width: 1600px;
     margin: 0 auto;
     box-shadow: 0px 4px 4px 0px #00000040;
     & .container {
       flex-direction: column;
-      margin-top: calc(200px - $section-padding);
-      margin-bottom: calc(200px - $section-padding);
+      margin-top: calc(200px - 84px - $section-padding-mobile);
+      // margin-bottom: calc(200px - $section-padding-mobile);
     }
   }
   &__header {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    max-width: 694px;
-    height: 120px;
+    max-width: 365px;
+    height: 84px;
     margin: 0 auto;
     margin-bottom: 30px;
     color: #ffffff;
@@ -53,11 +53,7 @@
       background-color: #2f303a66;
       background-position: center;
       background-repeat: no-repeat;
-      width: 100%;
-      & .container {
-        margin-top: calc(200px - $section-padding);
-        margin-bottom: calc(200px - $section-padding);
-      }
+      min-height: 400px;
     }
     &__header {
       font-size: 26px;
@@ -75,6 +71,15 @@
     &__section {
       background-image: $main-gradient,
         url(../../images/background-header-x1.jpg);
+      height: 600px;
+    }
+    &__header {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      width: 696px;
+      height: 120px;
     }
   }
 }
