@@ -1,10 +1,10 @@
 .newsletter {
   display: flex;
   flex-direction: column;
-  margin-left: 78px;
+  align-items: center;
   width: 570px;
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: $section-bg-color;
     border: 1px solid #ffffff4d;
@@ -24,7 +24,7 @@
     letter-spacing: 0.06em;
     font-weight: 700;
     line-height: 1.87;
-    margin-left: 12px;
+    margin-top: 20px;
     font-size: 16px;
     box-shadow: 0px 4px 4px 0px #00000026;
     cursor: pointer;
@@ -41,5 +41,27 @@
   }
   &__form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter {
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 0;
+
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__button {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    &__input {
+      width: 450px;
+    }
   }
 }

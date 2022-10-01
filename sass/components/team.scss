@@ -12,6 +12,10 @@
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
       0px 1px 3px 0px #0000001f;
+    & img {
+      width: 270px;
+      height: 260px;
+    }
   }
   &__description {
     text-align: center;
@@ -27,5 +31,20 @@
   &__position {
     color: $light-grey;
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__iteam {
+      width: 354px;
+      & img {
+        width: 354px;
+        height: 374px;
+      }
+    }
   }
 }

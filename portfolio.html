@@ -16,52 +16,50 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="public/css/main.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="navigation">
-          <a href="index.html" class="navigation__logo"
-            ><span class="logo-company_color">Web</span>Studio</a
-          >
-          <ul class="navigation__menu list">
-            <li>
-              <a href="index.html" class="navigation__link">Agencja</a>
-            </li>
-            <li>
-              <a
-                href="portfolio.html"
-                class="navigation__link navigation__link-active"
-                >Portfolio</a
-              >
-            </li>
-            <li><a href="kontakt.html" class="navigation__link">Kontakt</a></li>
-          </ul>
-        </nav>
-        <ul class="connection list">
-          <li class="connection__list">
-            <a href="mailto:info@devstudio.com" class="connection__link"
-              ><svg width="16" height="12" class="connection__svg">
-                <use href="images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
+    <header class="header container">
+      <a href="index.html" class="navigation__logo"
+        ><span class="logo-company_color">Web</span>Studio</a
+      >
+      <nav class="navigation">
+        <ul class="navigation__menu list">
           <li>
             <a
-              href="tel:+48111111111"
-              class="connection__link connection__link-phone"
-              ><svg width="10" height="16" class="connection__svg">
-                <use href="images/icons.svg#icon-smartphone-1"></use>
-              </svg>
-              +48 111 111 111
-            </a>
+              href="index.html"
+              class="navigation__link navigation__link-active"
+              >Agencja</a
+            >
           </li>
+          <li>
+            <a href="portfolio.html" class="navigation__link">Portfolio</a>
+          </li>
+          <li><a href="kontakt.html" class="navigation__link">Kontakt</a></li>
         </ul>
-      </div>
+      </nav>
+      <ul class="connection list">
+        <li class="connection__list">
+          <a href="mailto:info@devstudio.com" class="connection__link"
+            ><svg width="16" height="12" class="connection__svg">
+              <use href="images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a
+            href="tel:+48111111111"
+            class="connection__link connection__link-phone"
+            ><svg width="10" height="16" class="connection__svg">
+              <use href="images/icons.svg#icon-smartphone-1"></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="portfolio section">
@@ -97,8 +95,6 @@
                 <img
                   src="images/technocrack.jpg"
                   alt="Laptop displays a website"
-                  width="370"
-                  height="294"
                 />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Technocrack</p>
@@ -116,12 +112,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/basketball.jpg"
-                  alt="Two basketball players"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/basketball.jpg" alt="Two basketball players" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">
                     Grafika New Orlean vs Golden Star
@@ -143,8 +134,6 @@
                 <img
                   src="images/seafood.jpg"
                   alt="Logo of The Seafood restaurant"
-                  width="370"
-                  height="294"
                 />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Restauracja Seafood</p>
@@ -162,12 +151,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/prime.jpg"
-                  alt="Headphone"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/prime.jpg" alt="Headphone" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Projekt Prime</p>
                   <p class="portfolio__branch">Marketing</p>
@@ -184,12 +168,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/boxes.jpg"
-                  alt="Boxes"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/boxes.jpg" alt="Boxes" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Projekt Boxes</p>
                   <p class="portfolio__branch">Aplikacja</p>
@@ -209,8 +188,6 @@
                 <img
                   src="images/inspiration.jpg"
                   alt="Laptop displays a website"
-                  width="370"
-                  height="294"
                 />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Inspiration has no Borders</p>
@@ -228,12 +205,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/magazyn.jpg"
-                  alt="Magazyn Limited Edition"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/magazyn.jpg" alt="Magazyn Limited Edition" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Magazyn Limited Edition</p>
                   <p class="portfolio__branch">Dizajn</p>
@@ -250,12 +222,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/lab.jpg"
-                  alt="A tag"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/lab.jpg" alt="A tag" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Projekt LAB</p>
                   <p class="portfolio__branch">Marketing</p>
@@ -272,12 +239,7 @@
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
-                <img
-                  src="images/business.jpg"
-                  alt="Someone is using laptop"
-                  width="370"
-                  height="294"
-                />
+                <img src="images/business.jpg" alt="Someone is using laptop" />
                 <div class="portfolio__border">
                   <p class="portfolio__company">Growing Business</p>
                   <p class="portfolio__branch">Aplikacja</p>
@@ -290,7 +252,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div>
+        <div class="footer__test">
           <a href="" class="footer__logo"
             ><span class="logo-company_color">Web</span>Studio</a
           >
@@ -361,7 +323,7 @@
         </div>
         <div class="newsletter">
           <p class="footer__font">ZAPISZ SIĘ DO NEWSLETTERA</p>
-          <form class="newsletter__form">
+          <form action="#" class="newsletter__form">
             <label for="email-adress-2" class="newsletter__label">
               <input
                 type="email"
