@@ -44,6 +44,18 @@ body {
       flex-wrap: wrap;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -127,6 +139,30 @@ header {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main__section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tablet-header.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet-header.jpg);
+    background-size: 768px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    max-width: 1199px;
+  }
+  .main__section .container {
+    margin-top: 24px;
+    margin-bottom: 106px;
+  }
+  .main__header {
+    font-size: 26px;
+    max-width: 365px;
+    height: 84px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,6 +255,21 @@ header {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+  }
+  .connection__link-phone {
+    margin-left: 0;
+  }
+}
 .footer {
   background-color: #2f303a;
   color: #ffffff;

@@ -44,5 +44,28 @@
     box-shadow: 0px 4px 4px 0px #00000026;
   }
 }
-@media screen (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    &__section {
+      background-image: $main-gradient, url(../../images/tablet-header.jpg);
+      background-size: 768px;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+      max-width: 1199px;
+      & .container {
+        margin-top: calc(118px - $section-padding);
+        margin-bottom: calc(200px - $section-padding);
+      }
+    }
+    &__header {
+      font-size: 26px;
+      max-width: 365px;
+      height: 84px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
 }

@@ -33,6 +33,18 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 img {
   display: block;
   max-width: 100%;
