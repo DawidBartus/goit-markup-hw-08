@@ -29,6 +29,7 @@
       justify-content: center;
       gap: 8px;
       margin-bottom: 50px;
+      justify-content: flex-start;
     }
     &:hover,
     &:focus {
@@ -80,8 +81,10 @@
     padding-left: 24px;
   }
   & img {
+    min-width: 320px;
     width: 450px;
     height: 294px;
+    object-fit: cover;
   }
 }
 .overlay {
@@ -109,6 +112,11 @@
       width: 354px;
       height: 294px;
     }
+    &__button {
+      &__list {
+        justify-content: center;
+      }
+    }
   }
 }
 @media screen and (min-width: 1200x) {
@@ -116,6 +124,11 @@
     & img {
       width: 370px;
       height: 294px;
+    }
+    &__button {
+      &__list {
+        justify-content: center;
+      }
     }
   }
 }

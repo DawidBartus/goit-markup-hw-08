@@ -103,23 +103,127 @@ img {
   padding-bottom: 0px;
 }
 
-.hidden-menu__button {
+.menu {
+  position: relative;
+}
+.menu__navigation .menu__link {
+  font-size: 40px;
+}
+.menu__contact .menu__link {
+  color: #757575;
+}
+.menu__media {
+  position: absolute;
+  bottom: 48px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+}
+.menu__media .menu__link {
+  color: #2196f3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px;
+}
+.menu__media li:last-of-type .menu__link {
+  border-right: none;
+}
+.menu__contact {
+  position: absolute;
+  bottom: 124px;
+}
+.menu__contact :nth-child(1) .menu__link {
+  font-size: 34px;
+}
+.menu__contact :nth-child(2) .menu__link {
+  font-size: 24px;
+}
+.menu__link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.menu__link:hover, .menu__link:active, .menu__link:focus {
+  color: #2196f3;
+}
+.menu__button {
   border: none;
   background-color: white;
   width: 40px;
   height: 40px;
+}
+.menu__button :hover, .menu__button :focus, .menu__button :active {
+  fill: #2196f3;
   cursor: pointer;
 }
-.hidden-menu__button :hover, .hidden-menu__button :focus, .hidden-menu__button :active {
-  fill: #2196f3;
-}
-.hidden-menu__icon {
+.menu__icon {
   width: 24px;
   height: 16px;
   margin: auto;
 }
+.menu__list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: white;
+}
+.menu__svg {
+  width: 18px;
+  height: 18px;
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: white;
+  z-index: 3;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  border: none;
+  background-color: inherit;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.menu-container .menu-toggle :hover, .menu-container .menu-toggle :focus, .menu-container .menu-toggle :active {
+  fill: #2196f3;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
-  .hidden-menu {
+  .menu__button {
     display: none;
   }
 }
@@ -210,6 +314,7 @@ img {
 }
 .navigation {
   width: 480px;
+  position: relative;
 }
 .navigation__menu {
   display: none;
@@ -351,6 +456,7 @@ img {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 10px;
+    width: auto;
   }
   .connection__link-phone {
     margin-left: 0;
@@ -362,6 +468,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 360px;
   }
 }
 .footer {
@@ -1161,6 +1268,20 @@ footer .container {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__svg {
     width: 226px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .clients__svg__size {
+    width: 106px;
+    height: 60px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .clients__svg__size use {
+    display: contents;
   }
 }
 .portfolio .container {
@@ -1207,6 +1328,9 @@ footer .container {
           justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .portfolio__button:hover, .portfolio__button:focus {
   background-color: #2196f3;
@@ -1265,8 +1389,11 @@ footer .container {
   padding-left: 24px;
 }
 .portfolio img {
+  min-width: 320px;
   width: 450px;
   height: 294px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .overlay {
@@ -1298,11 +1425,21 @@ footer .container {
     width: 354px;
     height: 294px;
   }
+  .portfolio__button__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200x) {
   .portfolio img {
     width: 370px;
     height: 294px;
+  }
+  .portfolio__button__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .social__icon {

@@ -38,6 +38,16 @@
   .clients {
     &__svg {
       width: 226px;
+      display: flex;
+      &__size {
+        width: 106px;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        & use {
+          display: contents;
+        }
+      }
     }
   }
 }
