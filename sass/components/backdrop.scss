@@ -136,7 +136,7 @@
     &_svg {
       position: absolute;
       top: 5px;
-      right: 30px;
+      right: 5px;
     }
   }
 
@@ -250,6 +250,13 @@
     &__label:nth-child(3) &__svg {
       top: 252px;
       left: 53.5px;
+    }
+    &__button {
+      &_close {
+        position: absolute;
+        top: 8px;
+        right: 30px;
+      }
     }
   }
 }

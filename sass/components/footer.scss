@@ -78,6 +78,7 @@ footer .container {
       flex-direction: column;
       align-items: center;
       margin-right: 70px;
+      margin-bottom: 0;
     }
     &__media {
       display: flex;
@@ -91,6 +92,7 @@ footer .container {
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
   }
 }

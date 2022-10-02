@@ -1,0 +1,26 @@
+.hidden-menu {
+  &__button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    & :hover,
+    & :focus,
+    & :active {
+      fill: $company-blue;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 16px;
+    margin: auto;
+  }
+  &__list {
+  }
+}
+@media screen and (min-width: 768px) {
+  .hidden-menu {
+    display: none;
+  }
+}
