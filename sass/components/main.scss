@@ -48,7 +48,7 @@
 @media screen and (min-width: 768px) {
   .main {
     &__section {
-      background-image: $main-gradient, url(../../images/tablet-header.jpg);
+      background-image: $main-gradient, url(../images/tablet-header.jpg);
       background-size: cover;
       background-color: #2f303a66;
       background-position: center;
@@ -69,8 +69,7 @@
 @media screen and (min-width: 1200px) {
   .main {
     &__section {
-      background-image: $main-gradient,
-        url(../../images/background-header-x1.jpg);
+      background-image: $main-gradient, url(../images/background-header-x1.jpg);
       height: 600px;
     }
     &__header {
