@@ -61,6 +61,7 @@
 
   &__comment {
     color: $light-grey;
+    width: 100%;
   }
 
   &__textarea {
@@ -216,40 +217,49 @@
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .backdrop {
     &__table {
-      width: 450px;
+      width: 100%;
+      max-width: 450px;
       height: 609px;
     }
     &__label {
-      width: 370px;
+      width: 100%;
+      max-width: 370px;
     }
     &__input {
-      width: 370px;
+      width: 100%;
+      max-width: 370px;
     }
     &__textarea {
-      width: 370px;
+      width: 100%;
+      max-width: 370px;
     }
     &__terms {
       font-size: 12px;
     }
     &__header {
-      width: 370px;
       text-align: center;
       margin: 0 auto;
       margin-top: 40px;
     }
     &__label:first-of-type &__svg {
-      top: 118px;
+      top: 95px;
       left: 55px;
     }
 
     &__label:nth-child(2) &__svg {
-      top: 184px;
+      top: 162px;
       left: 54.3px;
     }
 
     &__label:nth-child(3) &__svg {
-      top: 252px;
+      top: 230px;
       left: 53.5px;
+    }
+    &__svg {
+      &__check {
+        bottom: 137px;
+        left: 23px;
+      }
     }
     // &__button {
     //   &_close {
