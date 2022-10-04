@@ -124,11 +124,10 @@
     }
   }
 }
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
   .portfolio {
-    & img {
-      width: 370px;
-      height: 294px;
+    &__list li {
+      width: calc((100% - 60px) / 3);
     }
     &__button {
       &__list {
