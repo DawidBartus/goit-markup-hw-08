@@ -8,6 +8,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    & li {
+      width: 100%;
+    }
   }
   &__button {
     background-color: #f5f4fa;
@@ -82,7 +85,7 @@
   }
   & img {
     min-width: 320px;
-    width: 450px;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -108,9 +111,11 @@
 
 @media screen and (min-width: 768px) {
   .portfolio {
+    &__list li {
+      width: calc((100% - 30px) / 2);
+    }
     & img {
-      width: 354px;
-      height: 294px;
+      height: auto;
     }
     &__button {
       &__list {

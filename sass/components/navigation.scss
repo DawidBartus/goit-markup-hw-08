@@ -1,6 +1,7 @@
 .navigation {
   width: 480px;
   position: relative;
+  display: none;
   &__menu {
     display: none;
     // display: flex;
@@ -45,6 +46,7 @@
 @media screen and (min-width: 768px) {
   .navigation {
     width: 480px;
+    display: block;
     &__menu {
       display: flex;
       & li:nth-child(2) {
@@ -87,5 +89,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-}
+// @media screen and (min-width: 1200px) {
+//   .navigation {
+//   }
+// }
