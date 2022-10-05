@@ -8,6 +8,7 @@
     color: $light-grey;
   }
   &__media {
+    flex-wrap: wrap;
     position: absolute;
     bottom: 48px;
     left: 20px;
